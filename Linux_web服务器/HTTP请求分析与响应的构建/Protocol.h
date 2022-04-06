@@ -97,7 +97,7 @@ class EndPoint{
       Str>>http_request.Method>>http_request.URI>>http_request.Version;
       //将方法统一转化成大写 Get->GET
       std::string& strtmp=http_request.Method;
-      std::transform(strtmp.begin(),strtmp.end(),strtmp.begin(),std::toupper);//写回strtmp首部
+      std::transform(strtmp.begin(),strtmp.end(),strtmp.begin(),::toupper);//写回strtmp首部
     }
 
     void AnalyuestHeadS(){
